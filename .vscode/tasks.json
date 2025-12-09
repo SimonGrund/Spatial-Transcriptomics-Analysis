@@ -1,0 +1,20 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "git init",
+			"type": "shell",
+			"command": "git init"
+		},
+		{
+			"label": "git commit",
+			"type": "shell",
+			"command": "git add . && git commit -m \"Initial commit: Spatial Transcriptomics analysis by Disha Kshirsagar\""
+		},
+		{
+			"label": "create github repo",
+			"type": "shell",
+			"command": "gh repo create Spatial-Transcriptomics-Module-4.3 --public --source=. --remote=origin --push"
+		}
+	]
+}
