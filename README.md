@@ -169,7 +169,7 @@ This module demonstrates spatial transcriptomics analysis using 10x Genomics Vis
    - Normalize cell type weights per spot
 
 3. **Visualization**
-   - Generate cell type proportion maps for each cell type:
+   - Generate cell type proportion maps for each of the 9 cell types:
      - B_cells
      - CAFs (Cancer-Associated Fibroblasts)
      - Cancer_Epithelial
@@ -217,7 +217,7 @@ BiocManager::install('glmGamPoi')
 
 ### Usage
 
-**Important**: Before running the scripts, you need to update the file paths to match your local directory structure:
+**Important**: Before running the scripts, you need to update the file paths to match your local directory structure. The scripts contain references to `Module_4.3` (likely from a previous workshop numbering) which should be changed to `Module_4.2`:
 
 1. **For Seurat_spatial_basic.R**: Change line 31 from `Module_4.3/Data/spatial/` to `Module_4.2/Data/spatial/` and line 95 from `Module_4.3/Results/` to `Module_4.2/Results/`
 
@@ -244,7 +244,7 @@ source("Module_4.2/RCTD.R")
 
 - **Results Directory** (`Module_4.2/Results/`):
   - `spatial_KRT8_example.jpg`: KRT8 expression spatial plot
-  - `*_weights.jpg`: Cell type proportion maps (10 cell types)
+  - `*_weights.jpg`: Cell type proportion maps (9 cell types)
   - Quality control plots
   - Cluster visualizations
   - Spatially variable gene plots
@@ -305,7 +305,7 @@ Wu, S.Z., Al-Eryani, G., Roden, D.L. et al. A single-cell and spatially resolved
 │   │   └── RCTD_processed.rds
 │   ├── Results/
 │   │   ├── spatial_KRT8_example.jpg
-│   │   └── [10 cell type weight maps]
+│   │   └── [9 cell type weight maps]
 │   ├── Seurat_spatial_basic.R
 │   ├── Spatial_Seurat_Final.R
 │   ├── RCTD.R
