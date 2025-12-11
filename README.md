@@ -217,6 +217,16 @@ BiocManager::install('glmGamPoi')
 
 ### Usage
 
+**Important**: Before running the scripts, you need to update the file paths to match your local directory structure:
+
+1. **For Seurat_spatial_basic.R**: Change line 31 from `Module_4.3/Data/spatial/` to `Module_4.2/Data/spatial/` and line 95 from `Module_4.3/Results/` to `Module_4.2/Results/`
+
+2. **For Spatial_Seurat_Final.R**: Uses correct `Module_4.2` paths and can be run as-is
+
+3. **For RCTD.R**: Change all instances of `Module_4.3` to `Module_4.2` (lines 19, 48, 65, 81, 139, 142) and update absolute paths `/cloud/project/` to your working directory or use relative paths
+
+Then run:
+
 ```r
 # For Seurat spatial analysis (basic):
 source("Module_4.2/Seurat_spatial_basic.R")
@@ -274,11 +284,11 @@ Wu, S.Z., Al-Eryani, G., Roden, D.L. et al. A single-cell and spatially resolved
 
 ```
 .
-├── Module 4.1/
+├── Module 4.1/                             # Note: Directory name has a space
 │   ├── filtered_feature_bc_matrix.h5
 │   ├── metadata.csv
 │   └── scRNA_tutorial_code.R
-├── Module_4.2/
+├── Module_4.2/                             # Note: Directory name has an underscore
 │   ├── Data/
 │   │   ├── spatial/
 │   │   │   ├── filtered_feature_bc_matrix.h5
